@@ -44,8 +44,8 @@
   
     - template: templates/build.yml
       parameters:
-        buildConfiguration: 'Release' 
+        buildConfiguration: 'Release'
 
-- task: PublishBuildArtifacts@1
+    - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: drop'
       condition: succeeded()
